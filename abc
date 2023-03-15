@@ -1,0 +1,61 @@
+var element = document.createElement("div");  
+element.className = "row row-cols-1 row-cols-md-4 g-4"
+
+
+const body = document.querySelector('body')
+
+var element = document.createElement("div");  
+element.classList = "dd"
+element.innerText = `asssssddddddds`
+
+body.append(element);
+
+
+
+console.log(body.innerHTML)
+
+var coldiv = document.createElement("div");
+coldiv.className = "dd1"
+
+element.appendChild(coldiv);
+
+coldiv.innerText = `assss`
+
+console.log(element.innerHTML)
+
+
+var coldiv = document.createElement("div");
+coldiv.className = "col"
+
+element.appendChild(coldiv);
+
+
+var carddiv = document.createElement("div");
+coldiv.className = "card"
+
+coldiv.appendChild(carddiv);
+
+
+
+var bodydiv = document.createElement("div");
+bodydiv.className = "card-body"
+
+carddiv.appendChild(bodydiv);
+
+let aa = `<h5 class="card-title">asasda</h5>`
+var titlediv = document.createElement("div");
+titlediv.className = "card-title"
+
+
+bodydiv.appendChild(titlediv);
+
+
+
+var textdiv = document.createElement("div");
+textdiv.className = "card-text"
+
+
+textdiv.innerHTML = aa
+console.log(coldiv.innerHTML)
+
+titlediv.appendChild(textdiv);

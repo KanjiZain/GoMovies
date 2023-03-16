@@ -10,7 +10,7 @@ div.header input  {
     padding: 10px;
     margin-right: 20px;
     background-color: transparent;
-    border-width: 3px;
+    border-width: 2px;
     border-color: black;
     padding-right: 40px;
     border-style: solid;
@@ -36,4 +36,75 @@ div.navbar {
 
 div.row {
     background-color: rgb(34,37,75);
+
+
 }
+
+
+div.card span {
+    font-weight: 500;
+    text-align: right;
+    display: inline;
+    background-color: rgb(42, 14, 61);
+    padding: 5px;
+    border-radius: 6px;
+    float: right;
+   
+}
+
+div.card {
+background-color: transparent;
+    border-width: 15px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+ 
+}
+
+.card:hover {
+    transform: translateY(20px);
+    transition: transform 0.3s ease-in;
+
+  }
+
+  .card:hover .overview {
+    opacity: 1;
+    display: block;
+    transform: translateY(10px);
+    transition: transform 0.5s ease-in;
+  }
+
+  .card .overview {
+
+    display: none;
+  }
+
+div.card h3 {
+    color: white;
+    font-size:larger;
+    display: inline;
+
+}
+
+p.overview {
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    border-radius: 7px;
+}
+
+
+
+
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+  input:focus {
+    color: white;
+  }
